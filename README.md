@@ -4,7 +4,7 @@
 
 收听《家庭自制》：
 - [小宇宙](https://www.xiaoyuzhoufm.com/podcast/67dff6130ff066afdbb00285)
-- [网易云音乐](https://music.163.com/#/djradio?id=1230534551)
+- [网易云音乐](https://music.163.com/djradio?id=1230534551)
 
 ## 节目歌单
 
