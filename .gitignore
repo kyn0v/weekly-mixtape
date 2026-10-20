@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+scripts/ax
+.DS_Store
+
+# Local-only NCM implementation and fixtures; never publish these files.
+/scripts/ncm.py
+/scripts/test_prepare.py
+
+# Personal configuration and generated work.
+config.local.json
+*.band/
+*-mixtape-assets/
+*.ncm
+*.flac
+*.wav
+*.mp3
+!/assets/Intro.mp3
+*.log

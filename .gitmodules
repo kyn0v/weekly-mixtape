@@ -1,0 +1,3 @@
+[submodule "modules/audio-preparer"]
+	path = modules/audio-preparer
+	url = https://github.com/kyn0v/audio-preparer.git
