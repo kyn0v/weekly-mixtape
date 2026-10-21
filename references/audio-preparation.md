@@ -22,6 +22,6 @@ git submodule update --init --recursive
 
 或者第一次 `git clone --recurse-submodules <公开仓库地址>`。GitHub 上需要访问私有仓库的账号/SSH 权限，不把凭据写进代码或 URL。
 
-`.gitmodules` 使用 `https://github.com/kyn0v/audio-preparer.git`。换机时配置本机 GitHub HTTPS 认证，例如 `gh auth login` 和 `gh auth setup-git`；不要把 Token 放进 URL。地址和固定提交 ID 是公开信息，源码仍由 private remote 的权限保护。
+`.gitmodules` 使用 `https://github.com/kyn0v/Audio-Preparer.git`。换机时配置本机 GitHub HTTPS 认证，例如 `gh auth login` 和 `gh auth setup-git`；不要把 Token 放进 URL。地址和固定提交 ID 是公开信息，源码仍由 private remote 的权限保护。
 
 不要在私有模块缺失时自动下载替代解码器或现场重写实现。不要将 `modules/audio-preparer` 的内容复制进主仓库、文档或公开构建附件。

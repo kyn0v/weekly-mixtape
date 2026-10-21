@@ -1,4 +1,4 @@
-# weekly-mixtape
+# Weekly-Mixtape
 
 为播客 **《家庭自制》** 的制作准备工作而构建的 macOS agent skill：将每期选曲整理为 GarageBand 工程，预留人声录音轨，放入固定 Intro，并自动排列音乐素材，减少重复的手工操作。
 
@@ -35,18 +35,19 @@ modules/audio-preparer/       # 私有 submodule：识别、按需处理、验�
 
 ## 换机安装
 
-主仓库：[kyn0v/weekly-mixtape](https://github.com/kyn0v/weekly-mixtape)（Public）。
-音频模块：[kyn0v/audio-preparer](https://github.com/kyn0v/audio-preparer)（Private）。
+主仓库：[kyn0v/Weekly-Mixtape](https://github.com/kyn0v/Weekly-Mixtape)（Public）。
+音频模块：[kyn0v/Audio-Preparer](https://github.com/kyn0v/Audio-Preparer)（Private）。
+GitHub 展示名称使用首字母大写；以下安装命令显式保留小写本地目录，skill 标识和 Python 包名不变。
 先使用有权访问私有仓库的账号配置 GitHub HTTPS 认证，例如 `gh auth login` 后执行 `gh auth setup-git`，然后：
 
 ```sh
-git clone --recurse-submodules https://github.com/kyn0v/weekly-mixtape.git
+git clone --recurse-submodules https://github.com/kyn0v/Weekly-Mixtape.git weekly-mixtape
 cd weekly-mixtape
 swiftc scripts/ax.swift -o scripts/ax
 ```
 
 如果主仓库已克隆：`git submodule update --init --recursive`。
-`.gitmodules` 指向 `https://github.com/kyn0v/audio-preparer.git`，Git 使用本机配置的身份认证读取私有模块，不在 URL 中存放凭据。
+`.gitmodules` 指向 `https://github.com/kyn0v/Audio-Preparer.git`，Git 使用本机配置的身份认证读取私有模块，不在 URL 中存放凭据。
 **没有私有仓库权限也能阅读公开流程和运行公开测试，但不能执行真实音频准备。**
 
 将 `~/.agents/skills/weekly-mixtape` 链接到本仓库即可安装；若该位置已有内容，先比较并备份到 skills 目录之外，不直接覆盖。
